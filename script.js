@@ -63,7 +63,7 @@ console.log(newArray4);
 // ფილტრის საშულებით გაფილტრეთ და გამოიტანეთ მარტო ის სიტყვები რომლების სიმბოლოების რაოდენობა იქნება 3-ზე მეტი;
 
 let languages = ['html', 'css', 'javascript', 'python', 'php'];
-let newLanguages = languages.filter(z=> z.length > 3);
+let newLanguages = languages.filter(z => z.length > 3);
 console.log(newLanguages);
 
 // // 6.მოცემულია მასივი:
@@ -85,10 +85,9 @@ console.log(array6);
 //უნდა დაემატოს უცვლელად;
 
 let items = [12, 'google', 32, null, 'yahoo', 25];
-let newItems = items.map(r => {
-    (typeof r == 'number') ? console.log(r * r):
-    (typeof r == 'string') ? console.log(r.toUpperCase()):console.log(r);
-})
+let newItems = items.map (r => (typeof r == 'number') ? r * r : 
+(typeof r == 'string') ? r.toUpperCase() : r );
+console.log(newItems);
 
 // 8. Მოცემულია მასივი:
 // let words = ['Madrid', 'Rome', 'Milan', 'Berlin'];
